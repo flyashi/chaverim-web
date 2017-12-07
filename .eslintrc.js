@@ -26,6 +26,16 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // Yakov preferences
     'comma-dangle': ["error", "only-multiline"],
-    'space-before-function-paren': ["error", "never"]
+    'space-before-function-paren': ["error", "never"],
+    'no-trailing-spaces': 1,
+    'camelcase': 1,
+    'no-unused-vars': 1,
+    'semi': 1,
+    'comma-spacing': 1,
+    'no-undef': 1,
+    'quotes': 1,
+    'block-spacing': 1,
+    'eqeqeq': 1,
+    'spaced-comment': 1,
   }
 }
