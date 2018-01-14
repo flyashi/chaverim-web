@@ -32,7 +32,7 @@ export default new Router({
       name: 'VueInfo',
       component: VueInfo,
       meta: {
-        title: 'Vue Info'
+        // title: 'Vue Info'
       }
     },
     {

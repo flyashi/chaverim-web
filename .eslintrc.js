@@ -37,5 +37,7 @@ module.exports = {
     'block-spacing': 1,
     'eqeqeq': 1,
     'spaced-comment': 1,
+    'padded-blocks': 1,
+    'eol-last': 1,
   }
 }

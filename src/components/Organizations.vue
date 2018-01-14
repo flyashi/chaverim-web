@@ -93,9 +93,9 @@ export default {
   computed: {
     filteredOrgs: function() {
       if (this.searchState === '') {
-        return Object.values(orgs).sort(compareOrgs)
+        return Object.values(orgs).filter(org => org.test_only !== true).sort(compareOrgs)
       }
-      return Object.values(orgs).filter((org) => {
+      return Object.values(orgs).filter(org => org.test_only !== true).filter((org) => {
         let filterTextLower = this.searchState.toLowerCase()
         if (org.id.toLowerCase() === filterTextLower) return true
         if (org.short_name.toLowerCase().indexOf(filterTextLower) >= 0) return true
@@ -119,7 +119,7 @@ export default {
       cb(matchedRegions)
     },
     getAllRegions() {
-      const allOrgs = Object.values(orgs)
+      const allOrgs = Object.values(orgs).filter(org => org.test_only !== true)
       const allRegions = []
       allOrgs.forEach(org => {
         if (org.coverage_areas && org.coverage_areas.length) {

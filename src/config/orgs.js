@@ -107,5 +107,25 @@ export default {
     'info_hotline': null,
     'website': null,
     'coverage_areas': ['Union County', 'Newark']
+  },
+  'M': {
+    'id': 'M',
+    'short_name': 'Mars',
+    'full_name': 'Chaverim of Mars',
+    'dispatch_hotline': '+99 44 331 44235',
+    'info_hotline': '+99 44 331 44234',
+    'website': 'https://m.chvr.im/',
+    'coverage_areas': ['Mars', 'Phobos', 'Deimos'],
+    'test_only': true,
+  },
+  'PL': {
+    'id': 'PL',
+    'short_name': 'Pluto',
+    'full_name': 'Pluto Chaverim',
+    'dispatch_hotline': '+99 99 331 44235',
+    'info_hotline': '+99 99 331 44234',
+    'website': 'https://pl.chvr.im/',
+    'coverage_areas': ['Pluto', 'Charon'],
+    'test_only': true,
   }
 }
